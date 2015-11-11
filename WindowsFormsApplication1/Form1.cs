@@ -16,20 +16,32 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+
+
+            /* DEBUG */
+            tb1.Text = "9";
+            tb2.Text = "7";
+            //btnBerekenen_Click(null,null);
+
+
+            Persoon p = new Persoon();
+            p.Naam = "Patrick";
+            p.Leeftijd = 17;
+
+            MessageBox.Show(p.Informatie, "Persoon info", MessageBoxButtons.OK);
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnBerekenen_Click(object sender, EventArgs e)
         {
+            //Int32 value = Int32.Parse(tb1.Text);
+            //Int32 value2 = Int32.Parse(tb2.Text);
+            //Int32 value3 = value + value2;
 
-        }
+            Int32 DeSom = PatrickFuncties.MijnFuncties.TelBijElkaarOp(tb1.Text, tb2.Text);
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Int32 value = Int32.Parse(numericTextBox1.Text);
-            Int32 value2 = Int32.Parse(numericTextBox2.Text);
-            Int32 value3 = value + value2;
-            string berekening = (String.Format("{0}" + "+" + "{1}" + "=" + "{2}", value, value2, value3));
-            MessageBox.Show(berekening, "blup", MessageBoxButtons.OK);
+            string melding = (String.Format("De som van {0} en {1} = {2}", tb1.Text, tb2.Text, DeSom));
+            MessageBox.Show(melding, "Melding", MessageBoxButtons.OK);
         }
     }
 }

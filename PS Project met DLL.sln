@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{7501211A-F44C-4E66-95CF-F4ABC4C43504}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptelProgramma", "WindowsFormsApplication1\OptelProgramma.csproj", "{7501211A-F44C-4E66-95CF-F4ABC4C43504}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatrickFuncties", "PatrickFuncties\PatrickFuncties.csproj", "{9EE00364-640C-4490-B1CC-7E7332088060}"
 EndProject

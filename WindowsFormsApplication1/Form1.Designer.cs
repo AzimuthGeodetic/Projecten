@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.numericTextBox2 = new WindowsFormsApplication1.NumericTextBox();
-            this.numericTextBox1 = new WindowsFormsApplication1.NumericTextBox();
+            this.btnBerekenen = new System.Windows.Forms.Button();
+            this.tb2 = new WindowsFormsApplication1.NumericTextBox();
+            this.tb1 = new WindowsFormsApplication1.NumericTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -42,48 +42,47 @@
             this.label1.Size = new System.Drawing.Size(92, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Voer 2 getallen in:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // btnBerekenen
             // 
-            this.button1.Location = new System.Drawing.Point(43, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Bereken";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBerekenen.Location = new System.Drawing.Point(43, 51);
+            this.btnBerekenen.Name = "btnBerekenen";
+            this.btnBerekenen.Size = new System.Drawing.Size(75, 23);
+            this.btnBerekenen.TabIndex = 1;
+            this.btnBerekenen.Text = "Bereken";
+            this.btnBerekenen.UseVisualStyleBackColor = true;
+            this.btnBerekenen.Click += new System.EventHandler(this.btnBerekenen_Click);
             // 
-            // numericTextBox2
+            // tb2
             // 
-            this.numericTextBox2.AllowSpace = false;
-            this.numericTextBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.numericTextBox2.Location = new System.Drawing.Point(81, 25);
-            this.numericTextBox2.MaxLength = 50;
-            this.numericTextBox2.Name = "numericTextBox2";
-            this.numericTextBox2.Size = new System.Drawing.Size(53, 20);
-            this.numericTextBox2.TabIndex = 2;
-            this.numericTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb2.AllowSpace = false;
+            this.tb2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tb2.Location = new System.Drawing.Point(81, 25);
+            this.tb2.MaxLength = 50;
+            this.tb2.Name = "tb2";
+            this.tb2.Size = new System.Drawing.Size(53, 20);
+            this.tb2.TabIndex = 2;
+            this.tb2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // numericTextBox1
+            // tb1
             // 
-            this.numericTextBox1.AllowSpace = false;
-            this.numericTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.numericTextBox1.Location = new System.Drawing.Point(22, 25);
-            this.numericTextBox1.MaxLength = 50;
-            this.numericTextBox1.Name = "numericTextBox1";
-            this.numericTextBox1.Size = new System.Drawing.Size(53, 20);
-            this.numericTextBox1.TabIndex = 3;
-            this.numericTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb1.AllowSpace = false;
+            this.tb1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tb1.Location = new System.Drawing.Point(22, 25);
+            this.tb1.MaxLength = 50;
+            this.tb1.Name = "tb1";
+            this.tb1.Size = new System.Drawing.Size(53, 20);
+            this.tb1.TabIndex = 3;
+            this.tb1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(156, 80);
-            this.Controls.Add(this.numericTextBox1);
-            this.Controls.Add(this.numericTextBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tb1);
+            this.Controls.Add(this.tb2);
+            this.Controls.Add(this.btnBerekenen);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.ResumeLayout(false);
@@ -94,9 +93,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private NumericTextBox numericTextBox2;
-        private NumericTextBox numericTextBox1;
+        private System.Windows.Forms.Button btnBerekenen;
+        private NumericTextBox tb2;
+        private NumericTextBox tb1;
     }
 }
 
