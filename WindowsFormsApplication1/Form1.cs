@@ -19,29 +19,43 @@ namespace WindowsFormsApplication1
 
 
             /* DEBUG */
-            tb1.Text = "9";
-            tb2.Text = "7";
-            //btnBerekenen_Click(null,null);
-
-
+         
             Persoon p = new Persoon();
-            p.Naam = "Patrick";
+            p.VoorNaam = "Patrick";
+            p.AchterNaam = "Schut";
+            p.Geslacht = "Man";
             p.Leeftijd = 17;
 
-            MessageBox.Show(p.Informatie, "Persoon info", MessageBoxButtons.OK);
-
+            /* EINDE DEBUG */
         }
 
         private void btnBerekenen_Click(object sender, EventArgs e)
         {
+
+            /* OUDE TEST CODE */
+
             //Int32 value = Int32.Parse(tb1.Text);
             //Int32 value2 = Int32.Parse(tb2.Text);
             //Int32 value3 = value + value2;
 
-            Int32 DeSom = PatrickFuncties.MijnFuncties.TelBijElkaarOp(tb1.Text, tb2.Text);
+            //Int32 DeSom = PatrickFuncties.MijnFuncties.TelBijElkaarOp(tb1.Text, tb2.Text);
 
-            string melding = (String.Format("De som van {0} en {1} = {2}", tb1.Text, tb2.Text, DeSom));
-            MessageBox.Show(melding, "Melding", MessageBoxButtons.OK);
+            //string melding = (String.Format("De som van {0} en {1} = {2}", tb1.Text, tb2.Text, DeSom));
+            //MessageBox.Show(melding, "Melding", MessageBoxButtons.OK);
+
+            /* EIND OUDE TEST CODE */
+
+            string NaamFilter = tb1.Text;
+
+            Persoon p = new Persoon();
+            p.VoorNaam = p.gekregenVoornaam;
+            p.AchterNaam = p.gekregenAchternaam;
+            p.Geslacht = p.gekregenGeslacht;
+            p.Leeftijd = p.gekregenLeeftijd;
+            MessageBox.Show(p.Informatie, p.VoorNaam + " " + p.AchterNaam, MessageBoxButtons.OK);
+      
         }
+
+
     }
 }
